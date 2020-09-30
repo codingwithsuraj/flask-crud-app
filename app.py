@@ -8,6 +8,7 @@ app = Flask(__name__)
 app.secret_key = "Secret Key"
 
 #SqlAlchemy Database Configuration With Mysql
+#give something username and password to your database otherwise anyone can access your database and this will a loss.
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost/crud'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
